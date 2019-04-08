@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+
+    
+
+    
+    <title>markdown 語法 | 阿榮的技術歷程</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="markdown">
+    
+    <meta name="description" content="markdown 語法基本概念markdown 是種輕量級的標記語言，最後轉換成 XML 格式呈現。不同於同樣是XML格式的 HTML，markdown 注重語法「易讀易寫」，行內以標點符號標示格式，方便閱讀，非常適合用於撰寫文章或部落格。由於最後會以轉換成 XML 檔，因此在行內除了 markdown 保留字元外，也可以使用 HTML 的語法撰寫。 特殊字元在HTML中，無法直接呈現 &amp;lt;">
+<meta name="keywords" content="markdown">
+<meta property="og:type" content="article">
+<meta property="og:title" content="markdown 語法">
+<meta property="og:url" content="http://yoursite.com/2019/04/08/markdown 語法/index.html">
+<meta property="og:site_name" content="阿榮的技術歷程">
+<meta property="og:description" content="markdown 語法基本概念markdown 是種輕量級的標記語言，最後轉換成 XML 格式呈現。不同於同樣是XML格式的 HTML，markdown 注重語法「易讀易寫」，行內以標點符號標示格式，方便閱讀，非常適合用於撰寫文章或部落格。由於最後會以轉換成 XML 檔，因此在行內除了 markdown 保留字元外，也可以使用 HTML 的語法撰寫。 特殊字元在HTML中，無法直接呈現 &amp;lt;">
+<meta property="og:locale" content="zh-TW">
+<meta property="og:updated_time" content="2019-04-08T15:25:39.419Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="markdown 語法">
+<meta name="twitter:description" content="markdown 語法基本概念markdown 是種輕量級的標記語言，最後轉換成 XML 格式呈現。不同於同樣是XML格式的 HTML，markdown 注重語法「易讀易寫」，行內以標點符號標示格式，方便閱讀，非常適合用於撰寫文章或部落格。由於最後會以轉換成 XML 檔，因此在行內除了 markdown 保留字元外，也可以使用 HTML 的語法撰寫。 特殊字元在HTML中，無法直接呈現 &amp;lt;">
+    
+
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-135549023-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item">
+                                    <a class="main-nav-list-link" href="/">首頁</a>
+                                </li>
+                            
+                                        
+                                    
+                                <li class="main-nav-list-item">
+                                    <a class="main-nav-list-link" href="/">關於</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜尋">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="輸入關鍵字...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '頁面',
+            CATEGORIES: '分類',
+            TAGS: '標籤',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    未分類
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-markdown 語法" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        markdown 語法
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2019/04/08/markdown 語法/" class="article-date">
+            <time datetime="2019-04-08T15:22:44.000Z" itemprop="datePublished">2019-04-08</time>
+        </a>
+    </div>
+
+		
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/markdown/">markdown</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h1 id="markdown-語法"><a href="#markdown-語法" class="headerlink" title="markdown 語法"></a>markdown 語法</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>markdown 是種輕量級的標記語言，最後轉換成 XML 格式呈現。<br>不同於同樣是XML格式的 HTML，markdown 注重語法「易讀易寫」，行內以標點符號標示格式，方便閱讀，非常適合用於撰寫文章或部落格。<br>由於最後會以轉換成 XML 檔，因此在行內除了 markdown 保留字元外，也可以使用 HTML 的語法撰寫。</p>
+<h2 id="特殊字元"><a href="#特殊字元" class="headerlink" title="特殊字元"></a>特殊字元</h2><p>在HTML中，無法直接呈現 &lt; 與 &amp; 這兩個具功能性的符號，需要使用實體字元（character entities）的方式撰寫。<br>而在 markdown 中會自行判別這些符號，並轉換成相對印的形式。舉例來說：</p>
+<pre><code>&amp;copy;
+</code></pre><p>會轉換成 &copy; ，而</p>
+<pre><code>5 &lt; 4
+</code></pre><p>則會自動轉換成 <code>5 &amp;lt; 4</code> 。</p>
+<hr>
+<h2 id="行級元素"><a href="#行級元素" class="headerlink" title="行級元素"></a>行級元素</h2><h3 id="段落與換行"><a href="#段落與換行" class="headerlink" title="段落與換行"></a>段落與換行</h3><p>在不同段落間可以使用空白的一行隔開。</p>
+<p>在 markdown 中字句不會自動分行，若句子是接連不斷的，沒有空行的話，則會視為同一個段落，每個字句都不會分行。例如：</p>
+<pre><code>這是第一行
+這是第二行
+</code></pre><p>會編譯成</p>
+<p>這是第一行<br>這是第二行</p>
+<p>然而，你可以使用 <code>&lt;br /&gt;</code> 強制分行。</p>
+<h2 id="標籤（標題）"><a href="#標籤（標題）" class="headerlink" title="標籤（標題）"></a>標籤（標題）</h2><p>標籤可以分為兩種表現形式 Setext 與 Atx。</p>
+<p>Setext形式是利用底線標示，利用 =（最高階標題）和 -（第二階標題）。</p>
+<pre><code>this is title
+=============
+
+this is another title
+-------------
+</code></pre><p>Atx形式則是在行首插入1到6個 <code>#</code> ，各對應到<code>&lt;h1&gt;</code>至<code>&lt;h6&gt;</code>。<br>通常建議會在句尾也加上 <code>#</code> 標記，方便閱讀。</p>
+<pre><code># this is title #
+
+## this is another title ##
+</code></pre><p>以上兩者的字體大小式相同的。</p>
+<h2 id="區塊引言"><a href="#區塊引言" class="headerlink" title="區塊引言"></a>區塊引言</h2><p>在句首加入 <code>&gt;</code>，可以使背景變為淡灰色，形成區塊引言，如下圖</p>
+<blockquote>
+<p>this is block</p>
+</blockquote>
+<p>區塊能夠巢狀或在內部加入其他 markdown 語法。</p>
+<h2 id="清單"><a href="#清單" class="headerlink" title="清單"></a>清單</h2><h4 id="無序"><a href="#無序" class="headerlink" title="無序"></a>無序</h4><p>無序序列使用 <code>-</code> 、 <code>*</code> 與 <code>+</code> 於行頭標示，如：</p>
+<pre><code>*   listItem
+*   listItem
+
++   listItem
++   listItem
+
+-   listItem
+-   listItem
+</code></pre><p>均會被轉譯成：</p>
+<ul>
+<li>listItem</li>
+<li>listItem</li>
+</ul>
+<h4 id="有序"><a href="#有序" class="headerlink" title="有序"></a>有序</h4><p>有序序列則使用數字。數字標題由第一個數字開始排序，與後面的數字無關。無論後面的數字為何都不會影響轉譯後生成的結果，如：</p>
+<pre><code>9.  listItem
+5.  listItem
+3.  listItem
+16.  listItem
+</code></pre><p>會轉變成    </p>
+<ol start="9">
+<li>listItem</li>
+<li>listItem</li>
+<li>listItem</li>
+<li>listItem</li>
+</ol>
+<p>若要在一個序列中加入多段落，請使用tab或4個空白鍵縮排，如：</p>
+<pre><code>*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+    viverra nec, fringilla in, laoreet vitae, risus.
+
+    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+    viverra nec, fringilla in, laoreet vitae, risus.
+
+*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+    Suspendisse id sem consectetuer libero luctus adipiscing.
+</code></pre><p>會轉變為</p>
+<ul>
+<li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br>Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,<br>viverra nec, fringilla in, laoreet vitae, risus.</p>
+<p>Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,<br>viverra nec, fringilla in, laoreet vitae, risus.</p>
+</li>
+<li><p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit.<br>Suspendisse id sem consectetuer libero luctus adipiscing.</p>
+</li>
+</ul>
+<h3 id="分隔線"><a href="#分隔線" class="headerlink" title="分隔線"></a>分隔線</h3><p>可以使用連續三個或是以上的 <code>*</code> 、 <code>-</code> 與 <code>_</code> 標示分隔線，此行不可以有其他的字元。</p>
+<hr>
+<h2 id="行內元素"><a href="#行內元素" class="headerlink" title="行內元素"></a>行內元素</h2><h3 id="強調"><a href="#強調" class="headerlink" title="強調"></a>強調</h3><p>利用 <code>*</code> 與 <code>_</code> 強調字句，若只有一個符號則會轉換成<code>&lt;em&gt;</code>（斜體），兩個則會轉換成 <code>&lt;strong&gt;</code>（粗體），如：</p>
+<pre><code>*single asterisks*
+
+_single underscores_
+
+**double asterisks**
+
+__double underscores__
+</code></pre><p>轉換成</p>
+<p><em>single asterisks</em></p>
+<p><em>single underscores</em></p>
+<p><strong>double asterisks</strong></p>
+<p><strong>double underscores</strong></p>
+<h3 id="行內程式碼"><a href="#行內程式碼" class="headerlink" title="行內程式碼"></a>行內程式碼</h3><p>可以利用 <code>`</code> ，包覆行內程式碼，經過編譯後轉換成 <code>&lt;code&gt;</code>。<br>若要在程式碼內顯示 <code>`</code> ，則需要使用雙反影號，即</p>
+<pre><code>`` ` ``
+</code></pre><h3 id="連結"><a href="#連結" class="headerlink" title="連結"></a>連結</h3><p>最簡易的連結使用 <code>[顯示字句](超連結)</code> 的語法。</p>
+<p>若要在連結加入參考字句，則需要使用定義變數的方式，在句中加入 <code>[顯示字句][參考變數]</code>，<br>並在文章中任一位置定義變數 <code>[參考變數]: 超連結  &quot;參考字句&quot;</code>，舉例來說：</p>
+<pre><code>這是[google][google]連結
+[google]: http://google.com.tw/ &quot;go to google&quot;
+</code></pre><p>會變成「這是<a href="http://google.com.tw/" title="go to google" target="_blank" rel="noopener">google</a>連結」。</p>
+<p>若【變數參數】與【顯示字句】相同，則可以簡寫成<code>[顯示字句][]</code>。</p>
+<p>此外，markdown也支援使用 <code>&lt;&gt;</code> 的形式標記連結或是電子郵件的連結，如：</p>
+<pre><code>&lt;address@example.com&gt;
+&lt;http://google.com.tw/&gt;
+</code></pre><p><a href="mailto:&#x61;&#100;&#x64;&#114;&#101;&#115;&#x73;&#64;&#101;&#x78;&#97;&#109;&#112;&#108;&#x65;&#46;&#99;&#x6f;&#x6d;" target="_blank" rel="noopener">&#x61;&#100;&#x64;&#114;&#101;&#115;&#x73;&#64;&#101;&#x78;&#97;&#109;&#112;&#108;&#x65;&#46;&#99;&#x6f;&#x6d;</a><br><a href="http://google.com.tw/" target="_blank" rel="noopener">http://google.com.tw/</a></p>
+<h3 id="圖片"><a href="#圖片" class="headerlink" title="圖片"></a>圖片</h3><p>與連結相同可以使用行內或是變數的方式插入圖片，如：</p>
+<pre><code>![Alt text](/path/to/img.jpg)
+
+![Alt text](/path/to/img.jpg &quot;Optional title&quot;)    
+</code></pre><p>或是</p>
+<pre><code>![Alt text][id]
+
+[id]: url/to/image  &quot;Optional title attribute&quot;
+</code></pre><h3 id="跳脫字元"><a href="#跳脫字元" class="headerlink" title="跳脫字元"></a>跳脫字元</h3><p>markdown使用 <code>\</code> 來顯示保留字元的符號。如：</p>
+<pre><code>\   反斜線
+`   反引號
+*   星號
+_   底線
+{}  大括號
+[]  方括號
+()  括號
+#   井字號
++   加號
+-   減號
+.   英文句點
+!   驚嘆號
+</code></pre><p>參考文件：<a href="https://markdown.tw/#philosophy" target="_blank" rel="noopener">Markdown文件</a></p>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://yoursite.com/2019/04/08/markdown 語法/" data-id="cju8icudh00004wvft7v46bgc" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "Dean Lu"
+        },
+        "headline": "markdown 語法",
+        "image": "http://yoursite.com",
+        "keywords": "markdown",
+        "genre": "",
+        "datePublished": "2019-04-08",
+        "dateCreated": "2019-04-08",
+        "dateModified": "2019-04-08",
+        "url": "http://yoursite.com/2019/04/08/markdown 語法/",
+        "description": "markdown 語法基本概念markdown 是種輕量級的標記語言，最後轉換成 XML 格式呈現。不同於同樣是XML格式的 HTML，markdown 注重語法「易讀易寫」，行內以標點符號標示格式，方便閱讀，非常適合用於撰寫文章或部落格。由於最後會以轉換成 XML 檔，因此在行內除了 markdown 保留字元外，也可以使用 HTML 的語法撰寫。
+特殊字元在HTML中，無法直接呈現 &lt; "
+        "wordCount": 392
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>追蹤 :</p>
+        <ul class="social-links">
+            
+                
+            
+                
+            
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/dean534" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+            
+                
+            
+        </ul>
+    </div>
+    
+        
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="no-thumbnail">
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/04/08/markdown 語法/" class="title">markdown 語法</a></p>
+                            <p class="item-date"><time datetime="2019-04-08T15:22:44.000Z" itemprop="datePublished">2019-04-08</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">所有文章</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">四月 2019</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">標籤</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">標籤雲</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/markdown/" style="font-size: 10px;">markdown</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">連結</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2019 Dean Lu</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'dean534';
+    
+    
+    var disqus_url = 'http://yoursite.com/2019/04/08/markdown 語法/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
